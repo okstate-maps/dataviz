@@ -1,0 +1,366 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Diving into Data Visualization</title>
+
+		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+		<meta name="author" content="Hakim El Hattab">
+
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/blood.css" id="theme">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+
+		<style>
+			li {
+				font-size:0.75em;
+			}
+		</style>
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<section data-background-iframe="https://observablehq.com/embed/7059cc9cb7022a21?cells=viewof+date%2Cchart"
+						data-background-interactive>
+					<h1 style="font-size:2.5em;">Diving into Data Visualization</h1>
+					<p>
+						<small>Kevin Dyke, Maps/GIS and Digital Scholarship, Edmon Low Library</small>
+					</p>
+				</section>
+
+				<section>
+					<section>
+						<h2>Data Visualization</h2>
+						<p>
+							“how to communicate information through the simultaneous presentation of words, numbers, and pictures” (Tufte 2001, p. 10)
+						</p>
+					</section>
+					<section>
+						<img src="Minard.png"/>
+					</section>
+				</section>
+				
+
+				<!-- Example of nested vertical slides -->
+				<section>
+					<section>
+						<h2>When is a visualization a good idea?</h2>
+					</section>
+					<section>
+						<h2>When you have a significant amount of data</h2>
+
+						<table style="border: 3px solid white">
+							<tr>
+								<th>
+									Food
+								</th>
+								<th>
+									Deliciousness
+								</th>
+							</tr>
+							<tr>
+								<td>
+									Cake
+								</td>
+								<td>
+									9
+								</td>
+							</tr>
+							<tr>
+								<td>
+									Banana flavored candy
+								</td>
+								<td>
+									1
+								</td>
+							</tr>
+							<tr>
+								<td>
+									Dill pickle
+								</td>
+								<td>
+									7
+								</td>
+							</tr>
+							
+						</table>
+	
+						<em>not a significant amount</em>
+						
+					</section>
+					<section>
+							<img class="r-stretch" src="excel_mess.png">
+					</section>
+				</section>
+
+				<section>
+					<h3>When you want to highlight a relationship within your data</h3>
+					<img src="cigsmoking.jpg"/>
+				</section>
+
+				<section>
+					<h1>Types of Charts</h1>
+				</section>
+				
+				<section>
+					<section>
+						<h1>Time-series</h1>
+					</section>
+					
+					<section>
+						<p>“With one dimension marching along to the regular rhythm of seconds, minutes, hours, days, weeks, months, years, centuries, or millennia, the natural ordering of the time scale gives this design a strength and efficiency of interpretation found in no other graphic arrangement” (Tufte 2001, p. 28)
+						</p>
+					</section>
+
+					<section>
+						<figure>
+						<img  style="max-width:80%" src="lefthand.jpg"/>
+						<figcaption><small>C.J. Brackenridge,
+							"Secular variation in handedness over ninety years",
+							<em>Neuropsychologia</em>,
+							Volume 19, Issue 3,
+							1981,
+							Pages 459-462</small>
+							</figcaption>
+						</figure>
+					</section>
+				</section>
+				
+				<section>
+					<section>
+						<h1>Line charts</h1>		
+					</section>
+					
+					<section>
+						<img src="threeline.png"/>
+					</section>
+				</section>
+				
+				<section>
+				
+					<section>
+						<h1>Bar charts</h1>
+					</section>
+					<section >
+						<div class="r-hstack justify-between">
+							<img style="padding:10px" src="barchar1.jpg"/>
+							<img style="padding:10px" src="barchar2.jpg"/>
+						</div>
+					</section>
+				</section>
+				
+				
+				<section>
+					<section>
+						<h1>Pie charts</h1>
+					</section>
+					<section>
+						<img src="piechart.jpg"/>
+						
+					</section>
+				</section>
+
+				
+				<section>
+					<section>
+						<h1 class="r-fit-text">Scatterplot</h1>
+					</section>
+					<section>
+						<img src="scatterplot.jpg"/>
+					</section>
+					<section>
+						<img class="r-stretch" src="scatterplot2.jpg"/>
+					</section>
+				</section>
+				
+				<section>
+					<section>
+						<h1>100% Area Chart</h1>
+					</section>
+					<section>
+						<img src="100percent_area.jpg"/>
+					</section>
+				</section>
+
+				<section>
+					<section>
+						<h1>100% Stacked Bar Chart</h1>
+					</section>
+					<section>
+						<img src="100percent_stacked.jpg"/>
+						
+					</section>
+				</section>
+				<!-- <section>
+					<img src="chart_suggestions.jpg"/>
+					<a href="https://flowingdata.com/2009/01/15/flow-chart-shows-you-what-chart-to-use/
+					"><p>https://flowingdata.com/2009/01/15/flow-chart-shows-you-what-chart-to-use/</p>
+				</a>
+				<a href="https://www.juiceanalytics.com/chartchooser"><p>https://www.juiceanalytics.com/chartchooser</p></a>
+					
+				</section> -->
+
+				
+				<section>
+					<section>
+						<h1>Chartjunk!</h1>
+					</section>
+					<section>
+						<img src="3dpie.jpg"/>
+					</section>
+					<section>
+						<img class="r-stretch" src="badpie.jpg"/>
+						
+					</section>
+				</section>
+
+				<section>
+					<section>
+						<h1 class="r-fit-text">Tableau</h1>
+					</section>
+
+					<section>
+						<a href="https://public.tableau.com/app/learn/how-to-videos">
+							https://public.tableau.com/app/learn/how-to-videos</a>
+						<br>
+						<a href="https://www.tableau.com/blog/beginners-guide-tableau-public">
+							https://www.tableau.com/blog/beginners-guide-tableau-public</a>
+
+					</section>
+
+				</section>
+				
+					
+				<section>
+					<section>
+						<h1 class="r-fit-text">Observable/D3</h1>
+					</section>
+					<section>
+						<iframe style="background-color: white" width="100%" height="500" frameborder="0"
+  							src="https://observablehq.com/embed/82e4073007baa6f9?cell=*"></iframe>
+					</section>
+					<section>
+						<iframe style="background-color: white" width="100%" height="500" frameborder="0"
+  							src="https://observablehq.com/embed/@observablehq/plot-gallery@latest?cell=*"></iframe>
+					</section>
+				</section>
+				<section>
+					<p>More intricate or customized visualization usually mean more <strong>coding</strong>.</p>
+
+
+					<ul style="display:block">
+						<lh><strong>Online</strong></lh>
+						<li>
+							Datawrapper (heavily used by journalists)
+						</li>
+
+						<li>
+							Tableau, not much coding, just need to learn the interface
+						</li>
+						<li>
+							D3, the ultimate for bespoke visualization, but is entirely code based. It's relatively low level, meaning 
+							putting anything together can seem pretty opaque.
+						</li>
+					</ul>
+					<br>
+					<ul style="display:block">
+						<lh><strong>Offline</strong></lh>
+						<li>
+							Excel
+						</li>
+						
+						<li>R</li>
+						<li>Python</li>
+					</ul>
+
+
+				</section>
+
+				<section>
+					<img src="d3line.jpg"/>
+				</section>
+				<section>
+					<img class="r-stretch" src="d3line_code.jpg"/>
+				</section>
+
+
+				<section>
+					<h4>References/Links</h3>
+					<ul style="list-style-type: none;">
+
+						<li style="margin-top:20px;margin-bottom:20px;margin-left: 40px;text-indent: -40px;">
+							Tufte, E. R. (2001). <em>The visual display of quantitative information</em>. Cheshire, CT: Graphics Press.
+						</li>
+					
+						<li style="margin-top:20px;margin-bottom:20px;margin-left: 40px;text-indent: -40px;">
+							For more on the Minard map:	<br>
+							<a href="https://bigthink.com/strange-maps/229-vital-statistics-of-a-deadly-campaign-the-minard-map">https://bigthink.com/strange-maps/229-vital-statistics-of-a-deadly-campaign-the-minard-map</a>
+						</li>
+
+						<li style="margin-top:20px;margin-bottom:20px;margin-left: 40px;text-indent: -40px;">
+							An interactive version of the Minard map:<br>
+							<a href="https://www.masswerk.at/minard/">https://www.masswerk.at/minard/</a>
+						</li>
+
+						<li style="margin-top:20px;margin-bottom:20px;margin-left: 40px;text-indent: -40px;">
+							For more great examples of data visualization:<br>
+							<a href="https://flowingdata.com">https://flowingdata.com</a>
+						</li>
+
+						<li style="margin-top:20px;margin-bottom:20px;margin-left: 40px;text-indent: -40px;">
+
+							From data to viz<br>
+							<a href="https://www.data-to-viz.com/">https://www.data-to-viz.com/</a>
+						</li>
+						<li style="margin-top:20px;margin-bottom:20px;margin-left: 40px;text-indent: -40px;">
+							Stephanie Evergreen <br>
+							<a href="Qualitative-Chart-Chooser-2024.pdf">Qualitative Chart Chooser</a>
+						</li>
+			
+					</ul>
+				</section>
+
+			</div>
+
+
+
+		</div>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/zoom/zoom.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/search/search.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script>
+
+			// Also available as an ES module, see:
+			// https://revealjs.com/initialization/
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				center: true,
+				hash: true,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealZoom, RevealNotes, RevealSearch, RevealMarkdown, RevealHighlight ]
+			});
+
+		</script>
+
+	</body>
+</html>
